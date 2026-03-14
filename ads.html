@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anúncios</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 8px;
+    }
+
+    .ad-wrapper {
+      width: 100%;
+      max-width: 728px;
+      text-align: center;
+    }
+
+    .ad-label {
+      font-family: sans-serif;
+      font-size: 10px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+  </style>
+
+  <!--
+    ATENÇÃO: O AdSense padrão NÃO funciona dentro de iframes cross-origin.
+    Para exibir anúncios no Google Sites via embed, use uma das opções abaixo:
+
+    OPÇÃO A — Google Ad Manager (DFP): suporta iframe, requer conta no Google Ad Manager.
+    OPÇÃO B — Banner manual com imagem + link (sem restrições de iframe).
+    OPÇÃO C — AdSense com data-ad-host (apenas para parceiros autorizados).
+
+    O código abaixo usa a OPÇÃO B como exemplo funcional imediato,
+    e a OPÇÃO A comentada para quando tiveres conta no Ad Manager.
+  -->
+</head>
+<body>
+  <div class="ad-wrapper">
+    <div class="ad-label">Publicidade</div>
+
+    <!-- =====================================================
+         OPÇÃO A — Google Ad Manager (GPT)
+         Descomenta e preenche os valores da tua conta.
+         Funciona dentro de iframes.
+    ======================================================
+    <div id="div-gpt-ad-XXXXXXXXXX-0" style="min-width:300px;min-height:250px;">
+      <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+      <script>
+        window.googletag = window.googletag || { cmd: [] };
+        googletag.cmd.push(function () {
+          googletag.defineSlot(
+            '/NETWORK_CODE/AD_UNIT_NAME',  // substitui pelo teu
+            [300, 250],
+            'div-gpt-ad-XXXXXXXXXX-0'
+          ).addService(googletag.pubads());
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          googletag.display('div-gpt-ad-XXXXXXXXXX-0');
+        });
+      </script>
+    </div>
+    ===================================================== -->
+
+    <!-- =====================================================
+         OPÇÃO B — Banner manual (funciona em qualquer iframe)
+         Substitui href, src e alt pelo teu anúncio.
+    ===================================================== -->
+    <a href="https://SEU-LINK-DE-DESTINO.com" target="_blank" rel="noopener noreferrer"
+       aria-label="Anúncio publicitário">
+      <img
+        src="https://via.placeholder.com/728x90/4285F4/ffffff?text=O+Seu+An%C3%BAncio+Aqui"
+        alt="Anúncio"
+        style="width:100%;height:auto;border-radius:4px;display:block;"
+      />
+    </a>
+
+  </div>
+</body>
+</html>
